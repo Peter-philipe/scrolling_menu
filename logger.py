@@ -47,7 +47,7 @@ def make_stremhandler() -> logging.FileHandler:
     console_handler.setFormatter(formatter)
     return console_handler
 
-def make_filehandler(file_output: str, file_mode: str = "w") -> logging.FileHandler:
+def make_filehandler(file_output: str, file_mode: str = "a") -> logging.FileHandler:
 
     if isinstance(file_output, Path):
         file_output = file_output.__str__()

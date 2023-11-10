@@ -24,10 +24,13 @@ class TedActuator(ImagesActuator):
     
 
     def open_app(self):
+        ted_controller_logger.info("Abrindo Ted")
         ted_exe_path = Path(r"C:\SefaNet\ted.exe")
         subprocess.Popen(ted_exe_path)
 
     def go_to_testar_tab(self):
+        ted_controller_logger.info("Indo para aba de |testar|")
+        
         img_tab_to_activate = (Path(__file__).parent / "testar_tab-to_activate.png")
         tab_to_activate_track = self.click_on_image(img_tab_to_activate, timeout = 15)
 
