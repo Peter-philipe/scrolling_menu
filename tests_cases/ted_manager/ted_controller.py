@@ -20,14 +20,16 @@ else: ted_controller_logger = create_logger(__name__)
 class TedActuator(ImagesActuator):
     
     def __init__(self, duration_move_pointer: float = 0.25, raise_approach: bool = False) -> None:
+        self.ted_pid: subprocess.Popen
         super().__init__(duration_move_pointer, raise_approach)
+
     
 
     def open_app(self):
         ted_controller_logger.info("Abrindo Ted")
         ted_exe_path = Path(r"C:\SefaNet\ted.exe")
-        subprocess.Popen(ted_exe_path)
-
+        self.ted_pid = subprocess.Popen(ted_exe_path, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        
     def go_to_testar_tab(self):
         ted_controller_logger.info("Indo para aba de |testar|")
         
@@ -63,6 +65,9 @@ class TedActuator(ImagesActuator):
             ted_controller_logger.error("Não foi possível abrir o menu scrolling") 
             return -1
 
+    def close_ted(self):
+        ted_controller_logger.info("Fechando janela")
+        self.ted_pid.terminate()
     
         
 if __name__ == "__main__":
@@ -73,6 +78,8 @@ if __name__ == "__main__":
     ted_app.open_app()
     ted_app.go_to_testar_tab()
     ted_app.open_scroll_menu()
+    #será mesmo que eu preciso de um novo teclado()(((())))
+    ted_app.close_ted()
 
     
 

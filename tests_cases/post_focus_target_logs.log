@@ -1,36 +1,37 @@
-INFO (tests_cases.ted_manager.ted_controller) 09/11/2023 22:54:40 PM: Abrindo Ted
-INFO (tests_cases.ted_manager.ted_controller) 09/11/2023 22:54:40 PM: Indo para aba de |testar|
-DEBUG (controlador_imagem) 09/11/2023 22:54:40 PM: Clicando na imagem: testar_tab-to_activate.png
-DEBUG (controlador_imagem) 09/11/2023 22:54:51 PM: Clique com sucesso
-INFO (tests_cases.ted_manager.ted_controller) 09/11/2023 22:54:51 PM: Tab |testar| está disponível
-DEBUG (controlador_imagem) 09/11/2023 22:54:51 PM: Clicando na imagem: scroll_menu_opener.png
-DEBUG (controlador_imagem) 09/11/2023 22:54:55 PM: Clique com sucesso
-INFO (tests_cases.ted_manager.ted_controller) 09/11/2023 22:54:55 PM: Menu de scrolling aberto
-DEBUG (menu_scroller) 09/11/2023 22:54:55 PM: Carregando imagens do menu ted_sefaz
-INFO (menu_scroller) 09/11/2023 22:54:55 PM: Iniciando busca por foco
-DEBUG (controlador_imagem) 09/11/2023 22:54:55 PM: Clicando na imagem: downward_step.png
-DEBUG (controlador_imagem) 09/11/2023 22:54:58 PM: Clique com sucesso
-DEBUG (menu_scroller) 09/11/2023 22:54:58 PM: Downward step foi encontrado
-DEBUG (controlador_imagem) 09/11/2023 22:54:58 PM: Clicando na imagem: post_focus_area_target-1.png
-WARNING (controlador_imagem) 09/11/2023 22:55:01 PM: O tempo para encontrar a imagem espirou: post_focus_area_target-1.png
-DEBUG (menu_scroller) 09/11/2023 22:55:01 PM: Tentado outra versão do tipo Target
-DEBUG (controlador_imagem) 09/11/2023 22:55:01 PM: Clicando na imagem: post_focus_area_target-2.png
-WARNING (controlador_imagem) 09/11/2023 22:55:03 PM: O tempo para encontrar a imagem espirou: post_focus_area_target-2.png
-DEBUG (menu_scroller) 09/11/2023 22:55:03 PM: Todas as tentativas para encontrar as imagens do tipo Target foram esgotadas
-INFO (menu_scroller) 09/11/2023 22:55:03 PM: Alvo não está no foco. Iniciando busca na direção escolhida
-DEBUG (controlador_imagem) 09/11/2023 22:55:03 PM: Clicando na imagem: downward_step.png
-DEBUG (controlador_imagem) 09/11/2023 22:55:07 PM: Clique com sucesso
-DEBUG (menu_scroller) 09/11/2023 22:55:07 PM: Downward step foi encontrado
-DEBUG (controlador_imagem) 09/11/2023 22:55:07 PM: Clicando na imagem: post_focus_area_target-1.png
-WARNING (controlador_imagem) 09/11/2023 22:55:09 PM: O tempo para encontrar a imagem espirou: post_focus_area_target-1.png
-DEBUG (menu_scroller) 09/11/2023 22:55:09 PM: Tentado outra versão do tipo Target
-DEBUG (controlador_imagem) 09/11/2023 22:55:09 PM: Clicando na imagem: post_focus_area_target-2.png
-WARNING (controlador_imagem) 09/11/2023 22:55:12 PM: O tempo para encontrar a imagem espirou: post_focus_area_target-2.png
-DEBUG (menu_scroller) 09/11/2023 22:55:12 PM: Todas as tentativas para encontrar as imagens do tipo Target foram esgotadas
-DEBUG (controlador_imagem) 09/11/2023 22:55:12 PM: Clicando na imagem: downward_step.png
-DEBUG (controlador_imagem) 09/11/2023 22:55:15 PM: Clique com sucesso
-DEBUG (menu_scroller) 09/11/2023 22:55:15 PM: Downward step foi encontrado
-DEBUG (controlador_imagem) 09/11/2023 22:55:15 PM: Clicando na imagem: post_focus_area_target-1.png
-DEBUG (controlador_imagem) 09/11/2023 22:55:19 PM: Clique com sucesso
-DEBUG (menu_scroller) 09/11/2023 22:55:19 PM: Target foi encontrado
-INFO (menu_scroller) 09/11/2023 22:55:19 PM: Alvo encontrado
+INFO (tests_cases.ted_manager.ted_controller) 09/11/2023 23:48:48 PM: Abrindo Ted
+INFO (tests_cases.ted_manager.ted_controller) 09/11/2023 23:48:48 PM: Indo para aba de |testar|
+DEBUG (controlador_imagem) 09/11/2023 23:48:48 PM: Clicando na imagem: testar_tab-to_activate.png
+DEBUG (controlador_imagem) 09/11/2023 23:49:04 PM: Clique com sucesso
+INFO (tests_cases.ted_manager.ted_controller) 09/11/2023 23:49:04 PM: Tab |testar| está disponível
+DEBUG (controlador_imagem) 09/11/2023 23:49:04 PM: Clicando na imagem: scroll_menu_opener.png
+DEBUG (controlador_imagem) 09/11/2023 23:49:07 PM: Clique com sucesso
+INFO (tests_cases.ted_manager.ted_controller) 09/11/2023 23:49:07 PM: Menu de scrolling aberto
+DEBUG (menu_scroller) 09/11/2023 23:49:07 PM: Carregando imagens do menu ted_sefaz
+INFO (menu_scroller) 09/11/2023 23:49:07 PM: Iniciando busca por foco
+DEBUG (controlador_imagem) 09/11/2023 23:49:07 PM: Clicando na imagem: downward_step.png
+DEBUG (controlador_imagem) 09/11/2023 23:49:11 PM: Clique com sucesso
+DEBUG (menu_scroller) 09/11/2023 23:49:11 PM: Downward step foi encontrado
+DEBUG (controlador_imagem) 09/11/2023 23:49:11 PM: Clicando na imagem: post_focus_area_target-1.png
+WARNING (controlador_imagem) 09/11/2023 23:49:13 PM: O tempo para encontrar a imagem espirou: post_focus_area_target-1.png
+DEBUG (menu_scroller) 09/11/2023 23:49:13 PM: Tentado outra versão do tipo Target
+DEBUG (controlador_imagem) 09/11/2023 23:49:13 PM: Clicando na imagem: post_focus_area_target-2.png
+WARNING (controlador_imagem) 09/11/2023 23:49:16 PM: O tempo para encontrar a imagem espirou: post_focus_area_target-2.png
+DEBUG (menu_scroller) 09/11/2023 23:49:16 PM: Todas as tentativas para encontrar as imagens do tipo Target foram esgotadas
+INFO (menu_scroller) 09/11/2023 23:49:16 PM: Alvo não está no foco. Iniciando busca na direção escolhida
+DEBUG (controlador_imagem) 09/11/2023 23:49:16 PM: Clicando na imagem: downward_step.png
+DEBUG (controlador_imagem) 09/11/2023 23:49:19 PM: Clique com sucesso
+DEBUG (menu_scroller) 09/11/2023 23:49:19 PM: Downward step foi encontrado
+DEBUG (controlador_imagem) 09/11/2023 23:49:19 PM: Clicando na imagem: post_focus_area_target-1.png
+WARNING (controlador_imagem) 09/11/2023 23:49:22 PM: O tempo para encontrar a imagem espirou: post_focus_area_target-1.png
+DEBUG (menu_scroller) 09/11/2023 23:49:22 PM: Tentado outra versão do tipo Target
+DEBUG (controlador_imagem) 09/11/2023 23:49:22 PM: Clicando na imagem: post_focus_area_target-2.png
+WARNING (controlador_imagem) 09/11/2023 23:49:24 PM: O tempo para encontrar a imagem espirou: post_focus_area_target-2.png
+DEBUG (menu_scroller) 09/11/2023 23:49:24 PM: Todas as tentativas para encontrar as imagens do tipo Target foram esgotadas
+DEBUG (controlador_imagem) 09/11/2023 23:49:24 PM: Clicando na imagem: downward_step.png
+DEBUG (controlador_imagem) 09/11/2023 23:49:28 PM: Clique com sucesso
+DEBUG (menu_scroller) 09/11/2023 23:49:28 PM: Downward step foi encontrado
+DEBUG (controlador_imagem) 09/11/2023 23:49:28 PM: Clicando na imagem: post_focus_area_target-1.png
+DEBUG (controlador_imagem) 09/11/2023 23:49:31 PM: Clique com sucesso
+DEBUG (menu_scroller) 09/11/2023 23:49:31 PM: Target foi encontrado
+INFO (menu_scroller) 09/11/2023 23:49:31 PM: Alvo encontrado
+INFO (tests_cases.ted_manager.ted_controller) 09/11/2023 23:49:31 PM: Fechando janela

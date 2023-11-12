@@ -40,4 +40,4 @@ if __name__ == "__main__":
     find_in_scrolling_menus.load_images(post_focus_targets_path)
     find_in_scrolling_menus.search_by_focus("down", 12)
     
-    focus_area = 12
+    ted_app.close_ted()
