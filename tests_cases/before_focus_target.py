@@ -15,7 +15,7 @@ from controlador_imagem import img_aux_logger
 from tests_cases.ted_manager.ted_controller import TedActuator, ted_controller_logger
 
 
-log_file = Path(__file__).parent / "post_focus_target_logs.log"
+log_file = Path(__file__).parent / "before_focus_target_logs.log"
 if __name__ == "__main__": post_f_target_logger = create_logger("", log_file)
 else: post_f_target_logger = create_logger(__name__, log_file)
 
@@ -28,7 +28,7 @@ if __name__ == "__main__":
     ted_controller_logger.addHandler(make_filehandler(log_file))
 
     menu_folder_image = src_folder / r"general_images\ted_sefaz"
-    post_focus_target_menu_folder = menu_folder_image / "post_focus_target"
+    post_focus_target_menu_folder = menu_folder_image / "before_focus_target"
     post_focus_targets_path: list[Path] = [img_path for img_path in post_focus_target_menu_folder.iterdir()]
 
     ted_app = TedActuator()

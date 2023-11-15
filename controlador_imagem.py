@@ -55,7 +55,7 @@ class ImagesActuator:
                 if self.raise_approach:
                     raise error
                 else:
-                    img_aux_logger.error(f"Informações sobre o erro: {error}")
+                    img_aux_logger.debug(f"Informações sobre o erro: {error}")
                     return -2
             
 
@@ -75,7 +75,7 @@ class ImagesActuator:
         if self.raise_approach:
             raise TimeoutError(f"O tempo para encontrar a imagem espirou: {img_path.name}")
         else:
-            img_aux_logger.warning(f"O tempo para encontrar a imagem espirou: {img_path.name}")
+            img_aux_logger.debug(f"O tempo para encontrar a imagem espirou: {img_path.name}")
             return -1
 
 
@@ -104,7 +104,7 @@ class ImagesActuator:
                 if self.raise_approach:
                     raise error
                 else:
-                    img_aux_logger.error(f"Informações sobre o erro: {error}")
+                    img_aux_logger.debug(f"Informações sobre o erro: {error}")
                     return -2
             
             if img_data is not None: return 0
@@ -113,7 +113,7 @@ class ImagesActuator:
         if self.raise_approach:
             raise TimeoutError(f"O tempo para encontrar a imagem espirou: {img_path.name}")
         else:
-            img_aux_logger.warning(f"O tempo para encontrar a imagem espirou: {img_path.name}")
+            img_aux_logger.debug(f"O tempo para encontrar a imagem espirou: {img_path.name}")
             return -1
 
 

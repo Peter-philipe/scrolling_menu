@@ -1,3 +1,4 @@
+
 from pathlib import Path
 import sys
 from typing import Union, List
@@ -100,7 +101,7 @@ class MenuScrolling:
 
         menu_s_logger.info("Iniciando busca por foco")
         target_tracking, border_tracking = self._take_a_step(step_direction, clicks_to_focus)
-        
+        self.stepcounter.refresh()
         if (target_tracking != 0 and border_tracking != 0):
 
             menu_s_logger.info("Alvo não está no foco. Iniciando busca na direção escolhida")
@@ -273,6 +274,27 @@ class MenuScrolling:
             if "downward_step" in file.name:
                 self.image_container.downward_step.append(file.name)
 
+        self._verify_img_container()
+
+    def _verify_img_container(self):
+            
+            if len(self.image_container.top_border) == 0:
+                menu_s_logger.error("Não foi encontrado nenhuma imagem para limite superior")
+                raise FileNotFoundError()
+
+            if len(self.image_container.bottom_border) == 0:
+                menu_s_logger.error("Não foi encontrado imagens para o limte inferior")
+                raise FileNotFoundError()
+            
+            if len(self.image_container.upward_step) == 0:
+                menu_s_logger.error("Não foi encontrado imagens para o passo superior")
+                raise FileNotFoundError()
+            
+            if len(self.image_container.upward_step) == 0:
+                menu_s_logger.error("Não foi encontrado imagens para o passo superior")
+                raise FileNotFoundError() 
+        
+
 class StepError(Exception):
     
     def __init__(self, message) -> None:
@@ -281,7 +303,7 @@ class StepError(Exception):
 
 if __name__ == "__main__":
     
-
+  
 
 
     print("fim")
